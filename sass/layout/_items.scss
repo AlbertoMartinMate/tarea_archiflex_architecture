@@ -1,0 +1,30 @@
+
+@use '../abstracts' as *;
+
+
+
+.items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 36%;
+    gap: 68px;
+    margin-bottom: 50px;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+
+        h3 {
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: rgba($black, 0.4);
+        }
+    }
+}

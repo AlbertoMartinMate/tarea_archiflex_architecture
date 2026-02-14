@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 60px;   // ← Un poco más de padding
+  padding-right: 40px;
+  overflow-x: hidden;
+
+  &__rectangle-1, &__rectangle-2, &__rectangle-3 {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba($grey, 0.4);
+}
+
+  &__rectangle-1 {
+  top: 160px;
+  left: 50px;
+  width: 240px;
+  height: 70px;
+  }
+
+  &__rectangle-2 {
+  bottom: 0px;
+  left: 400px;
+  width: 280px;
+  height: 100px;
+  }
+
+  &__rectangle-3 {
+    top: 0px;
+    right: 0px;
+    width: 680px;
+    height: 100%;
+    background-color: $grey;
+  }
+
+}
+

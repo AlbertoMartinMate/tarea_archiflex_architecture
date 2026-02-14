@@ -1,0 +1,77 @@
+@use '../abstracts' as *;
+
+
+.hero {
+  width: 100%;
+  position: relative;
+  z-index: 2; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 120px 0;
+
+  background-image: url('../img/image01.png'), url('../img/image02.png');
+  background-position: right 430px top 10px, right 30px top 10px;
+  background-size: 340px, 340px;
+  background-repeat: no-repeat, no-repeat;
+
+
+  &__title {
+    width: 60%;
+    font-size: 60px;
+    line-height: 96px;
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-family: $title-font;
+
+
+  }
+
+  &__subtitle{
+    width: 50%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 16px;
+    color: rgba($black, 0.4);
+    padding-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+
+    img {
+      position: absolute;
+      padding-left: 10px;
+      
+    }
+
+    .more {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $black;  
+      font-weight: 500;
+
+      &:hover {
+        color:rgba($black, 0.4);
+      }
+
+      img {
+        position: absolute;
+        left: 300px;
+        &:hover {
+        color:rgba($black, 0.4);
+      }
+      }
+    }
+
+
+     
+  }
+}
+

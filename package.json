@@ -1,0 +1,19 @@
+{
+  "name": "plantilla_scss_vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "npm run build && gh-pages -d dist",
+    "preview": "vite preview",
+    "sass": "sass sass/app.scss css/app.css",
+    "watch:sass": "sass --watch sass/app.scss css/app.css"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.97.2",
+    "vite": "^7.2.4"
+  }
+}

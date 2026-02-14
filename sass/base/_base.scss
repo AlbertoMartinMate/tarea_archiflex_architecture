@@ -1,0 +1,34 @@
+@use '../abstracts' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: 16px;
+  color: $black;
+  overflow-x: hidden;
+  background-color: $grey-light;
+  
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+

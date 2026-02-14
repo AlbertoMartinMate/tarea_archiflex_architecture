@@ -1,0 +1,53 @@
+@use '../abstracts' as *;
+
+.header {
+  position: relative;
+  z-index: 2; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 50px 0;
+
+  &__logo {
+    img {
+      width: 120px;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    position: absolute;  //nav se centra respecto al header completo, ignorando el logo.
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+    ul {
+      @include reset_list();
+      display: flex;
+      align-items: center;
+      gap: 36px;
+
+      li {
+        position: relative;
+        
+        a {
+          text-decoration: none;
+          color: rgba($black, 0.3);
+          font-weight: 400;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+    
+  }
+}
