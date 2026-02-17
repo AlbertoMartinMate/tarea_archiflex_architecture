@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/archiflex/',
+  base: '/tarea_archiflex_architecture/',
   server: {
     open: true
   }
